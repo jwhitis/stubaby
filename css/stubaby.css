@@ -11,8 +11,13 @@ nav.navbar-default div.navbar-collapse {
   border-bottom: 1px solid black;
 }
 
-div#main {
-  padding: 15px 0;
+div#photos {
+  padding-top: 15px;
+}
+
+div#photos div.photo {
+  width: 320px;
+  margin-bottom: 15px;
 }
 
 footer {
