@@ -1,0 +1,21 @@
+body {
+  padding-top: 50px;
+}
+
+nav.navbar-default {
+  border: none;
+  background-color: white;
+}
+
+nav.navbar-default div.navbar-collapse {
+  border-bottom: 1px solid black;
+}
+
+div#main {
+  padding: 15px 0;
+}
+
+footer {
+  padding-top: 15px;
+  border-top: 1px solid black;
+}
