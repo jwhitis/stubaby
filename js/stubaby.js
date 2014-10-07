@@ -17,7 +17,9 @@ $(document).on("ready", function() {
       var image_url = photo.media.m;
       var flickr_regexp = /(http:\/\/farm\d+.staticflickr.com\/\d+\/\d+_[0-9A-z]+_)[\w-](\.\w+)/;
       var url_pieces = flickr_regexp.exec(image_url);
-      image_url = url_pieces[1] + "n" + url_pieces[2];
+      // The "z" refers to an image resolution of 640px on the longest side; see
+      // https://www.flickr.com/services/api/misc.urls.html for additional options
+      image_url = url_pieces[1] + "z" + url_pieces[2];
 
       var image_tag = "<img src=\"" + image_url + "\" />"
       var image_container = "<div class=\"photo\">" + image_tag + "</div>"
