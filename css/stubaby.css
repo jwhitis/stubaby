@@ -1,18 +1,97 @@
 body {
-  padding-top: 50px;
+  padding-top: 98px;
 }
 
+/* BEGIN NAVBAR */
 nav.navbar-default {
+  padding-top: 50px;
   border: none;
+  background-color: transparent;
+}
+
+nav.navbar-default div.navbar-header {
+  margin: 0;
+}
+
+nav.navbar-default button.navbar-toggle,
+nav.navbar-default button.navbar-toggle:hover,
+nav.navbar-default button.navbar-toggle:focus {
+  height: 48px;
+  margin: 0;
+  padding: 8px;
+  border: none;
+  border-radius: 0;
+  background-color: black;
+}
+
+nav.navbar-default button.navbar-toggle.collapsed,
+nav.navbar-default button.navbar-toggle.collapsed:hover,
+nav.navbar-default button.navbar-toggle.collapsed:focus {
+  padding: 12px;
+}
+
+nav.navbar-default button.navbar-toggle.collapsed span.icon-bar,
+nav.navbar-default button.navbar-toggle span.expanded {
+  display: block;
+}
+
+nav.navbar-default button.navbar-toggle span.icon-bar,
+nav.navbar-default button.navbar-toggle.collapsed span.expanded {
+  display: none;
+}
+
+nav.navbar-default button.navbar-toggle span.icon-bar {
+  width: 25px;
+  height: 4px;
+  margin-top: 6px;
   background-color: white;
 }
 
-nav.navbar-default div.navbar-collapse {
-  border-bottom: 1px solid black;
+nav.navbar-default button.navbar-toggle span.icon-bar:first-child {
+  margin-top: 0;
 }
 
+nav.navbar-default button.navbar-toggle span.expanded {
+  position: relative;
+  top: -10px;
+  font-size: 55px;
+  line-height: 40px;
+  color: white;
+}
+
+nav.navbar-default a.navbar-brand {
+  height: auto;
+}
+
+nav.navbar-default div.navbar-collapse {
+  border: none;
+}
+
+nav.navbar-default div.navbar-collapse ul.navbar-nav {
+  margin: 7.5px 0;
+}
+
+nav.navbar-default div.navbar-collapse li {
+  padding: 7.5px 0;
+  text-align: right;
+}
+
+nav.navbar-default div.navbar-collapse li a,
+nav.navbar-default div.navbar-collapse li a:hover,
+nav.navbar-default a.navbar-brand {
+  padding: 4px 8px;
+  display: inline-block;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+}
+/* END NAVBAR */
+
 div#photos {
-  padding-top: 15px;
+  padding: 15px 15px 0 15px;
 }
 
 div#photos div.photo {
@@ -21,6 +100,11 @@ div#photos div.photo {
 }
 
 footer {
-  padding-top: 15px;
-  border-top: 1px solid black;
+  margin: 0 15px;
+  padding: 15px 0;
+  border-top: 2px solid #727272;
+}
+
+footer p {
+  margin: 0;
 }
